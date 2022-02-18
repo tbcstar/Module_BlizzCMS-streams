@@ -10,17 +10,19 @@ Module for BlizzCms that allows you to watch live Twitch and chat from the CMS.
 - Copy in your module folder The `Application/Modules/Streams` folder
 - Add the following to `application/config/routes.php` at the end of the file:
 
-```/*Streams*/
+```
+/*Streams*/
 $route[$lang.'/streams'] = 'streams/index';
-$route[$lang.'/streams/create'] = 'streams/create';```
+$route[$lang.'/streams/create'] = 'streams/create';
+```
 
 - Opens the application/modules/streams/views/index.php and on lines 11 and 21 replaces "parent=theegn.com&parent=www.theegn.com" for your own domain (This is required by twitch)
 
 ```
 Example:
-Before line 11: `parent=theegn.com&parent=www.theegn.com`
+Before line 11: parent=theegn.com&parent=www.theegn.com
 --
-Before line 21: `chat?parent=theegn.com&parent=www.theegn.com`
+Before line 21: chat?parent=theegn.com&parent=www.theegn.com
 ```
 - See it in action here `https://www.theegn.com/en/streams`
 # Screenshots
