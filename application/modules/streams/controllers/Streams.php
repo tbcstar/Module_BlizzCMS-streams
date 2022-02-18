@@ -23,7 +23,7 @@ class streams extends MX_Controller {
     {
 		$account = $this->session->userdata('blizz_sess_username');
         $channel = $this->input->post('channel');
-        $horario = $this->input->post('horario');
+        $schedule = $this->input->post('schedule');
 		echo $this->stream_model->insertstream($account, $channel, $horario);
 	}
 }
