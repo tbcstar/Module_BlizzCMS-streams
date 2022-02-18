@@ -16,12 +16,12 @@ class stream_model extends CI_Model {
     {
         return $this->db->select('*')->order_by('id', 'ASC')->get('streams');
     }
-	public function insertStream($account, $channel, $horario)
+	public function insertStream($account, $channel, $schedule)
     {
         $data = array(
             'account' => $account,
             'channel' => $channel,
-            'horario' => $horario
+            'schedule' => $schedule
         );
 
         $this->db->insert('streams', $data);
