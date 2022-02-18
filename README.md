@@ -36,4 +36,4 @@ Before line 21: chat?parent=theegn.com&parent=www.theegn.com
 - [WoW CMS Developers](https://wow-cms.com "BlizzCMS")
 - [WoW CMS Discord Members](https://discord.gg/vZG9vpS "WoW CMS Discord Members")
 - [Empire Gaming](https://www.theegn.com/ "Empire Gaming")
-- [AsmodeosNetwork](https://github.com/AsmodeosNetworkCO/Module_BlizzCMS-streams "AsmodeosNetwork - No longer maintained")
+- [AsmodeosNetwork - No longer maintained](https://github.com/AsmodeosNetworkCO/Module_BlizzCMS-streams "AsmodeosNetwork - No longer maintained")
