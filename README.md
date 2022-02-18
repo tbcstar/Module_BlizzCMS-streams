@@ -8,19 +8,19 @@ Module for BlizzCms that allows you to watch live Twitch and chat from the CMS.
 # Installation
 - Run the file (SQL/Streams.sql) in the BlizzCms database
 - Copy in your module folder The `Application/Modules/Streams` folder
-- Abre el archivo application/config/routes.php y agrega estas lineas al final:
+- Add the following to `application/config/routes.php` at the end of the file:
 
-`/*Streams*/`
-`$route[$lang.'/streams'] = 'streams/index';`
-`$route[$lang.'/streams/create'] = 'streams/create';`
+```/*Streams*/
+$route[$lang.'/streams'] = 'streams/index';
+$route[$lang.'/streams/create'] = 'streams/create';```
 
 - Opens the application/modules/streams/views/index.php and on lines 11 and 21 replaces "parent=theegn.com&parent=www.theegn.com" for your own domain (This is required by twitch)
 
 ```
 Example:
-Before line11: parent=theegn.com&parent=www.theegn.com
+Before line 11: `parent=theegn.com&parent=www.theegn.com`
 --
-Before line 21: chat?parent=theegn.com&parent=www.theegn.com
+Before line 21: `chat?parent=theegn.com&parent=www.theegn.com`
 ```
 - See it in action here `https://www.theegn.com/en/streams`
 # Screenshots
@@ -34,3 +34,4 @@ Before line 21: chat?parent=theegn.com&parent=www.theegn.com
 - [WoW CMS Developers](https://wow-cms.com "BlizzCMS")
 - [WoW CMS Discord Members](https://discord.gg/vZG9vpS "WoW CMS Discord Members")
 - [Empire Gaming](https://www.theegn.com/ "Empire Gaming")
+- [AsmodeosNetwork](https://github.com/AsmodeosNetworkCO/Module_BlizzCMS-streams "AsmodeosNetwork(No longer maintained)")
