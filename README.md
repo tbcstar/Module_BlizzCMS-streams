@@ -1,50 +1,36 @@
-# Streams | Modulo para BlizzCMS!
+# Streams | Module for BlizzCMS!
 
-Modulo para blizzCMS que te permite ver transmisiones en vivo y chatear desde el CMS .
+Module for BlizzCms that allows you to watch live Twitch and chat from the CMS.
 
-
-# Caracteristicas
-- Reproductor y chat de Twitch insertado en tu pagina web
-- modulo para agregar canales (1 canal por cuenta & se debe estar registrado para agregarlo a la lista)
-# Instalación
-- Ejecuta en la base de datos de BlizzCMS el archivo (SQL/streams.sql)
-- Copia en tu carpeta de modulos la carpeta application/modules/streams
+# Features
+- Player and twitch chat inserted on your website
+- Module to add channels (1 channel per account and must be registered to add it to the list)
+# Installation
+- Run the file (SQL/Streams.sql) in the BlizzCms database
+- Copy in your module folder The `Application/Modules/Streams` folder
 - Abre el archivo application/config/routes.php y agrega estas lineas al final:
 
 `/*Streams*/`
-  
 `$route[$lang.'/streams'] = 'streams/index';`
-
 `$route[$lang.'/streams/create'] = 'streams/create';`
 
-- abre el archivo application/modules/streams/views/index.php y en las lineas 11 y 21 reemplaza "Zuldazar-realms.tk" por tu propio dominio
+- Opens the application/modules/streams/views/index.php and on lines 11 and 21 replaces "parent=theegn.com&parent=www.theegn.com" for your own domain (This is required by twitch)
 
 ```
-Ejemplo:
-Antes linea 11: &parent=zuldazar-realms.tk
-Ahora Linea 11: &parent=tudominio.tdl
+Example:
+Before line11: parent=theegn.com&parent=www.theegn.com
 --
-Antes Linea 21: chat?parent=zuldazar-realms.tk
-Ahora Linea 21: chat?parent=tudominio.tdl
+Before line 21: chat?parent=theegn.com&parent=www.theegn.com
 ```
-- Disfruta tu modulo
-- para visualizarlo ingresa a `http://tudominio.tdl/streams`
-# Capturas de Pantalla
+- See it in action here `https://www.theegn.com/en/streams`
+# Screenshots
 [![Captura1](https://raw.githubusercontent.com/AsmodeosNetworkCO/Module_BlizzCMS-Streams/master/screenshots/screenshot-1.JPG "Captura1")]
 [![Captura2](https://raw.githubusercontent.com/AsmodeosNetworkCO/Module_BlizzCMS-Streams/master/screenshots/screenshot-2.JPG "Captura2")]
 [![Captura3](https://raw.githubusercontent.com/AsmodeosNetworkCO/Module_BlizzCMS-Streams/master/screenshots/screenshot-3.JPG "Captura3")]
 [![Captura4](https://raw.githubusercontent.com/AsmodeosNetworkCO/Module_BlizzCMS-Streams/master/screenshots/screenshot-4.JPG "Captura4")]
 [![Captura5](https://raw.githubusercontent.com/AsmodeosNetworkCO/Module_BlizzCMS-Streams/master/screenshots/screenshot-5.JPG "Captura5")]
 
-# Agradecimientos
+# Thanks
 - [WoW CMS Developers](https://wow-cms.com "BlizzCMS")
 - [WoW CMS Discord Members](https://discord.gg/vZG9vpS "WoW CMS Discord Members")
-- [Asmodeos Network CO](https://www.asmodeosnetworkco.tk/ "Asmodeos Network CO")
-- [Zuldazar Realms](https://zuldazar-realms.tk "Zuldazar Realms")
-- [Sebasbrs (Desarrollador del Modulo)](https://github.com/sebasbrs "Sebasbrs (Desarrollador del Modulo)")
-
-# Sponsor us
-- [Patreon](https://patreon.com/zuldazarrealms "Patreon")
-- [Ko-Fi](https://ko-fi.com/zuldazarrealms "Ko-Fi")
-- [LiberaPay](https://liberapay.com/sebasbrs32 "LiberaPay")
-- [Paypal](http://paypal.me/sebasgodoy1 "Paypal")
+- [Empire Gaming](https://www.theegn.com/ "Empire Gaming")
