@@ -1,29 +1,36 @@
 <?php 
-
+/**
+ * BlizzCMS
+ *
+ * @author WoW-CMS
+ * @copyright Copyright (c) 2019 - 2022, WoW-CMS (https://wow-cms.com)
+ * @license https://opensource.org/licenses/MIT MIT License
+ */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class streams extends MX_Controller {
-
+class streams extends BS_Controller
+{
     public function __construct()
     {
          parent::__construct();
-		 $this->load->model('stream_model');
+
+        is_module_installed('stream', true);
+
+        $this->load->model('stream_model');
+
+        $this->load->language('stream');
     }
     
     public function index()
     {
-        $data = array(
-            'pagetitle' => 'Live Streams',
-			'lang' => $this->lang->lang()
-        );
+        require_permission('view.stream');
+
+		$data = [
+            'realms' => $this->realm_model->find_all()
+        ];
         
+		$this->template->title(lang('tv_Streams'), config_item('app_name'));
+
         $this->template->build('index', $data);
     }
-	public function create()
-    {
-		$account = $this->session->userdata('blizz_sess_username');
-        $channel = $this->input->post('channel');
-        $schedule = $this->input->post('schedule');
-		echo $this->stream_model->insertstream($account, $channel, $horario);
-	}
 }

@@ -1,13 +1,14 @@
 # Streams | Module for BlizzCMS!
 
-Module for BlizzCms that allows you to watch live Twitch and chat from the CMS.
+BlizzCms 模块，允许您从 CMS 观看实时 Twitch 和聊天。
+BlizzCMS version 2.0.0+
 
-# Features
-- Player and twitch chat inserted on your website
-- Module to add channels (1 channel per account and must be registered to add it to the list)
-# Installation
-- Run the file (SQL/Streams.sql) in the BlizzCms database
-- Copy in your module folder The `Application/Modules/Streams` folder
+# 特征
+- 在您的网站上插入播放器和 twitch 聊天
+- 添加频道的模块（每个帐户 1 个频道，必须注册才能将其添加到列表中）
+# 安装
+- 在 BlizzCms 数据库中运行文件 (SQL/Streams.sql)
+- 复制 `Module_BlizzCMS-streams/application/modules/streams` 文件夹到 `BlizzCMS/application/modules` 目录下。
 - Add the following to `application/config/routes.php` at the end of the file:
 
 ```
